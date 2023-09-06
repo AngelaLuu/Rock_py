@@ -1,23 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title%} {% endblock}</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Rock Start Boutique Shop</title>
+    <link rel="shortcut icon" href="./images/icono_administrador.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/estilos.css')}}">
 </head>
+
 <body>
-    <nav class="menu">
-        <li>
-            <a href="/login">Login 💘</a>
-        </li>
-        <li>
-            <a href="/registro">Registro 💞</a>
-        </li>
-    </nav>
-    {% block content %}
-    
-    {% endblock %}
+
+    <a>INICIAR SESION</p>     
+        <a href="/form">Inicia sesion</a>
+    <a href='/crud'>Crud:D</a>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="logo">
+                <!-- Reemplaza 'ruta_de_la_imagen' con la ruta de tu imagen de empresa -->
+                <img src="/src/static/images/logo_empresa.jpeg" alt="Logo de la Empresa" style="margin-left: 0;">
+            </div>
+            <!-- Resto del contenido de tu barra de navegación (si lo tienes) -->
+        </nav>
+
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <img src="/src/static/images/icono_administrador.png" alt="Icono Administrador" style="width: 50px; height: 50px;">
+            </li>
+        </ul>
+        
+
+                <img src="/src/static/images/leftarrow.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="/src/static/images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+
+        <section class="hero__container container">
+            <h1 class="hero__title">"¡Bienvenido a Rock Start Boutique Shop! </h1>
+            <p class="hero__paragraph"> Explora nuestras colecciones de ropa de alta calidad. Compra con comodidad desde casa y disfruta de envíos rápidos. ¡Tu estilo comienza aquí!"</p>
+          </section>
+          </header>
+          
+
+    <main>
+        
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="/src/static/images/leftarrow.svg" class="testimony__arrow" id="before">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">NOMBRE PRODUCTO </h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, asperiores eaque laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione
+                            voluptatum!</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="/src/static/images/carrusel_1.jpeg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">NOMBRE PRODUCTO</h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, asperiores eaque laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione
+                            voluptatum!</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="/src/static/images/carrusel_2.jpeg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">NOMBRE PRODUCTO</h2>
+                            <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                                esse, asperiores eaque laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione
+                                voluptatum!</p>
+                    </div>
+
+
+                </section>
+                <img src="/src/static/images/rightarrow.svg" class="testimony__arrow" id="next">
+            </div>
+
+        </section>
+        </section>
+
+        <section class="container about">
+            <h2 class="subtitle">¿Quienes Somos?</h2>
+            <p class="about__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem nobis deserunt obcaecati, velit natus amet sequi fuga veniam, facere dignissimos placeat accusantium, quibusdam vero distinctio dolorem inventore sunt quas illum.</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="/src/static/images/tienda.svg" class="about__icon">
+                    <h3 class="about__title">......</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="/src/static/images/codigo.svg" class="about__icon">
+                    <h3 class="about__title">.....</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="/src/static/images/camisa.svg" class="about__icon">
+                    <h3 class="about__title">....</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="price container">
+            <h2 class="subtitle">Experiencia de clientes</h2>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name"></p>
+                    <h3 class="price__price"></h3>
+
+                    <div class="price__items">
+                        <p class="price__features"></p>
+                        <p class="price__features"></p>
+                        <p class="price__features"></p>
+                    </div>
+                </div>
+
+
+                <div class="price__element price__element--best">
+                    <p class="price__name"></p>
+                    <h3 class="price__price"></h3>
+
+                    <div class="price__items">
+                        <p class="price__features"></p>
+                        <p class="price__features"> </p>
+                        <p class="price__features"></p>
+                    </div>
+
+                </div>
+
+
+                <div class="price__element">
+                    <p class="price__name"></p>
+                    <h3 class="price__price"></h3>
+
+                    <div class="price__items">
+                        <p class="price__features"></p>
+                        <p class="price__features"></p>
+                        <p class="price__features"></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+ <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Rock Start</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="/src/static/images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="/src/static/images/images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="/src/static/images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados </h3>
+        </section>
+    </footer>
+
+    <script src="/src/static/js/slider.js"></script>
+    <script src="/src/static/js/questions.js"></script>
+    <script src="/src/static/js/menu.js"></script>
 </body>
+
 </html>
